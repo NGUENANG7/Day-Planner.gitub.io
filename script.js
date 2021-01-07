@@ -16,7 +16,7 @@ $(document).ready(function () {
     $("#currentDay").text(moment().format("LLL"));
     function timeFrame() {
         var currentHours = moment().hours();
-
+        
         $(".time-block").each(function () {
             var hourEl = $(this).attr("id");
             var hourDay = hourEl.substring(5, hourEl.length);
